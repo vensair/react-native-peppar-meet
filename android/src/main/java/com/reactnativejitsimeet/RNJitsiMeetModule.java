@@ -58,7 +58,6 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                             .setAudioOnly(false)
                             .setUserInfo(_userInfo)
                             .setFeatureFlag("pip.enabled", false)
-                            .setFeatureFlag("chat.enabled", false)
                             .setFeatureFlag("calendar.enabled", false)
                             .build();
                     mJitsiMeetViewReference.getJitsiMeetView().join(options);
@@ -94,7 +93,6 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                             .setAudioOnly(true)
                             .setUserInfo(_userInfo)
                             .setFeatureFlag("pip.enabled", false)
-                            .setFeatureFlag("chat.enabled", false)
                             .setFeatureFlag("calendar.enabled", false)
                             .build();
                     mJitsiMeetViewReference.getJitsiMeetView().join(options);
