@@ -46,7 +46,6 @@ RCT_EXPORT_METHOD(call:(NSString *)urlString userInfo:(NSDictionary *)userInfo)
             builder.userInfo = _userInfo;
 
             [builder setFeatureFlag:@"pip.enabled" withBoolean:NO];
-            [builder setFeatureFlag:@"chat.enabled" withBoolean:NO];
             [builder setFeatureFlag:@"calendar.enabled" withBoolean:NO];
         }];
         [jitsiMeetView join:options];
@@ -76,7 +75,6 @@ RCT_EXPORT_METHOD(audioCall:(NSString *)urlString userInfo:(NSDictionary *)userI
             builder.audioOnly = YES;
 
             [builder setFeatureFlag:@"pip.enabled" withBoolean:NO];
-            [builder setFeatureFlag:@"chat.enabled" withBoolean:NO];
             [builder setFeatureFlag:@"calendar.enabled" withBoolean:NO];
         }];
         [jitsiMeetView join:options];
